@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(33,33,33);
+    margin-top: 40px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 10px;
+    color: #DDDBCB;
+
+}
+
+.task{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .25);
+    padding: 4px 5px;
+    background-color: rgb(61, 61, 61);
+}
+
+.btn-section{
+    margin-left: 10px;
+    display: flex;
+    column-gap: 3px;
+    padding: 3px 2px;
+    
+}
+
+.comp-btn, .del-btn{
+    border: 2px solid black;
+    padding: 3px 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comp-btn{
+    background-color: lawngreen;
+}
+
+.del-btn{
+    background-color: red;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header{
+    padding: 5px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(24,24,24);
+    color: #DDDBCB;
+    
+}
+
+@media (max-width: 500px){
+    .header{
+        display: none;
+    }
+
+    body{
+        margin-top: 0px;
+    }
+
+
+}
+
+.add-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(24,24,24);
+    padding: .7rem;
+}
+
+.input-fld{
+    background-color: #212121;
+    color:#DDDBCB;
+    border: 1px solid #aaaaaa;
+    min-width: 15rem;
+    min-height: 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 4px 3px;    
+    white-space: pre-wrap;
+}
+
+.add-btn{
+    min-height: 2rem;
+    margin-left: -15px;
+    border-style: none;
+    border-top: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #212121;
+    color:#DDDBCB;
+    padding: 5px 3px;    
+    cursor: pointer;
+}
+
+.btn-ctn{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+
+}
+
+.completeall-btn{
+    background-color: lawngreen;
+}
+
+.erase-btn{
+    background-color: red;
+}
+
+.completeall-btn, .erase-btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px 3px;
+}
+
+.list .message-h1{
+    align-self: center;
+    
+}
